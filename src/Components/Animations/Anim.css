@@ -1,0 +1,103 @@
+.Container{
+  display: flex;
+  position: relative;
+  margin-top: 300px;
+  margin-bottom: 40px;
+  opacity: 0.7;
+}
+.clock{
+    display: flex;
+    border: 1px solid limegreen;
+    width: 200px;
+    height:200px;
+    border-radius: 103px;
+    justify-content: center;
+    animation: rotation 5s infinite linear;
+    background-color: rgb(66, 66, 66);
+  }
+
+.clock2 {
+    display: flex;
+    border: 1px solid limegreen;
+    width: 200px;
+    height:200px;
+    border-radius: 103px;
+    justify-content: center;
+    animation: rotation 60s infinite linear;
+    animation-delay: 0s;
+    position: absolute;
+}
+.minutes{
+  position: absolute;
+  border: 3px solid limegreen;
+  height: 80px;
+  border-radius: 10px;
+  top: 17px;
+}
+
+.hours {
+  position: absolute;
+  border: 3px solid limegreen;
+  height: 45px;
+  border-radius: 10px;
+  top: 52px;
+  right: 97px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.calendar {
+  height: 200px;
+  width: 200px;
+  border: 1px solid limegreen;
+  background-color: rgb(66, 66, 66);
+  border-radius: 10px;
+  align-items: center;
+
+}
+
+.up {
+  background-color: limegreen;
+  height: 60px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.numberC {
+  font-size: 90px;
+  text-align: center;
+  font-family: 'Segoe UI';
+  text-decoration: none;
+  color: limegreen;
+}
+
+.ring1 {
+  display: flex;
+  position: absolute;
+  height: 50px;
+  width: 15px;
+  top: -30px;
+  left: 135px;
+  border-radius: 4px;
+  border: 3px solid rgb(66, 66, 66);
+  background-color: limegreen;
+}
+
+.ring2 {
+  display: flex;
+  position: absolute;
+  border-radius: 4px;
+  border: 3px solid rgb(66, 66, 66);
+  height: 50px;
+  width: 15px;
+  top: -30px;
+  left: 55px;
+  background-color: limegreen;
+}

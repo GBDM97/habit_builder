@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "Segoe UI";
+}
+
+.normal{
+    height: 50px;
+    width: 500px;
+}
+
+.small{
+  height: 10px;
+  width: 100px;
+}
+
+.medium{
+    height: 30px;
+    width: 250px;
+}
+
+.lgreen {
+  background-color:limegreen; 
+}
+
+.green {
+  background-color:green; 
+}
+
+.black {
+  background-color: black; 
+}
+
+body {
+  
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+}
+
+.background_container {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(66, 66, 66);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  z-index: 1;
+  position:fixed;
+;
+  
+}
+
+.movingBox {
+  opacity: 0.7;
+  border-radius: 10px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  z-index: 2;
+}
+
+@keyframes example {
+  0%   {left:-500px; top:-500px;}
+  100%  {left:2000px; top:900px;}}
+
+.page{
+  height: 100%;
+  width:100%;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.p0 {
+  color: transparent;
+  background-color: transparent;
+  padding: 10px 15px;
+  border-radius: 10px;
+  height: fit-content;
+  z-index: 999;
+  pointer-events: none;
+  font-size: 30px;
+  border: 1px solid transparent;
+}
+
+.p1{
+  padding: 10px 15px;
+  border-radius: 10px;
+  height: fit-content;
+  width: fit-content;
+  z-index: 999;
+  color: white;
+  font-size: 30px;
+  border: 1px solid black;
+  background-color: rgb(66, 66, 66);
+}
+
+.smallP{
+  font-size: 15px;
+  margin: 5px;
+  text-align: center;
+}
+
+.titleOut{
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: rgb(66, 66, 66);
+  border: 1px solid black;
+  margin: 40px 40px 20px 40px;
+  padding: 10px 15px;
+}
+
+.titleW{
+  color: limegreen;
+  font-size: 100px;
+  font-weight: 400;
+}
+
+.titleContainer {
+  display:flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number{
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.inputText{
+  
+  padding: 10px 15px;
+  border-radius: 10px;
+  height: fit-content;
+  width: 700px;
+  z-index: 999;
+  color: white;
+  font-size: 30px;
+  border: 1px solid black;
+  background-color: rgb(66, 66, 66);
+  text-align: center;
+}
+
+.motiv{
+  color: limegreen;
+  font-size: 30px;
+  border: 1px solid limegreen;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgb(66, 66, 66);
+}
+
+.weekContainer{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  background-color: rgb(66, 66, 66);
+  border: 1px solid green;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+
+.rowContainer {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.dropdown1{
+  border: 1px solid black;
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: 100px;
+  background-color: rgb(66, 66, 66);
+}
+
+.formlayout{
+  background-color: rgb(66, 66, 66);
+}
+
+.selectbox{
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 30px;
+  border: 1px solid black;
+  background-color: rgb(66, 66, 66);
+}
+
+.pageInsert {
+  height: 100%;
+  width:100%;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rPage {
+  height: 4000px;
+  width:100%;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.8;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.insertNumber{
+  padding: 10px 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  height: fit-content;
+  min-width: 50px;
+  z-index: 999;
+  color: white;
+  font-size: 50px;
+  border: 1px solid black;
+  background-color: rgb(66, 66, 66);
+  text-align: center;
+}
+
+.button {
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.Img{
+  width: auto;
+  height: 10%;
+}
+
+.space{
+  margin-top: 300px;
+}
