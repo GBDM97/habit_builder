@@ -1,6 +1,6 @@
 {
   "name": "habit_builder",
-  "homepage": "https://github.com/GBDM97/habit_builder.git",
+  "homepage": "http://habitbuilder.rf.gd/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
