@@ -24,6 +24,14 @@ function Page() {
     const [currentFirst, setFirst] = React.useState(false);
     const [currentSource, setSource] = React.useState("");
     const [currentMeasure, setMeasure] = React.useState("");
+
+    const [current0, set0] = React.useState(0);
+    const [current1, set1] = React.useState(0);
+    const [current2, set2] = React.useState(0);
+    const [current3, set3] = React.useState(0);
+    const [current4, set4] = React.useState(0);
+    const [current5, set5] = React.useState(0);
+    const [current6, set6] = React.useState(0);
     
             const opt1 = "Reading"
             const opt2 = "Exercising"
@@ -54,6 +62,37 @@ function Page() {
             
             const handleN = (e:Page) => {
                 setN(e.target.value);
+
+                if (currentV === "study") {
+                if (e.target.value >= 120) {set0(120)} else {set0(e.target.value)}
+                if (e.target.value * 2 >= 120) {set1(120)} else {set1(e.target.value * 2)}
+                if (e.target.value * 3 >= 120) {set2(120)} else {set2(e.target.value * 3)}
+                if (e.target.value * 4 >= 120) {set3(120)} else {set3(e.target.value * 4)}
+                if (e.target.value * 5 >= 120) {set4(120)} else {set4(e.target.value * 5)}
+                if (e.target.value * 6 >= 120) {set5(120)} else {set5(e.target.value * 6)}
+                if (e.target.value * 7 >= 120) {set6(120)} else {set6(e.target.value * 7)}
+                }
+
+                if (currentV === "exercise") {
+                if (e.target.value >= 90) {set0(90)} else {set0(e.target.value)}
+                if (e.target.value * 2 >= 90) {set1(90)} else {set1(e.target.value * 2)}
+                if (e.target.value * 3 >= 90) {set2(90)} else {set2(e.target.value * 3)}
+                if (e.target.value * 4 >= 90) {set3(90)} else {set3(e.target.value * 4)}
+                if (e.target.value * 5 >= 90) {set4(90)} else {set4(e.target.value * 5)}
+                if (e.target.value * 6 >= 90) {set5(90)} else {set5(e.target.value * 6)}
+                if (e.target.value * 7 >= 90) {set6(90)} else {set6(e.target.value * 7)}
+                }
+
+                if (currentV === "read") {
+                set0(e.target.value)
+                set1(e.target.value * 2)
+                set2(e.target.value * 3)
+                set3(e.target.value * 4)
+                set4(e.target.value * 5)
+                set5(e.target.value * 6)
+                set6(e.target.value * 7)
+                }
+
                 if (currentFirst === false) {setFirst(true); time();}
             }
 
@@ -119,6 +158,13 @@ function Page() {
                         cToInit={cToInit}
                         currentTask={currentTask}
                         currentN={currentN}
+                        current0={current0}
+                        current1={current1}
+                        current2={current2}
+                        current3={current3}
+                        current4={current4}
+                        current5={current5}
+                        current6={current6}
                         currentM={currentM}
                         currentV={currentV}
                         currentSource={currentSource}

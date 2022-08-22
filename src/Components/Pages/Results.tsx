@@ -5,7 +5,14 @@ import Animation3 from "../Animations/Animation3";
 export type ResultsArgs = {
     
     currentTask: string,
-    currentN: number, 
+    current0: number,
+    current1: number,
+    current2: number,
+    current3: number,
+    current4: number,
+    current5: number,
+    current6: number,
+    currentN: number,
     currentM: string, 
     currentMeasure: string, 
     currentV: string, 
@@ -33,8 +40,8 @@ export type ResultsArgs = {
     if (day === 6) {today = "S"; D0 = "S"; D1 = "M"; D2 = "T"; D3 = "W"; D4 = "T"; D5 = "F"; D6 = "S";}
 
 const Results = ({currentTask,
-    currentN, currentM, currentMeasure, currentV, currentSource, cToInit, hidden}:ResultsArgs) => {
-    
+    current0, current1, current2, current3, current4, current5, current6, currentM, currentMeasure, currentV, currentSource, cToInit, hidden}:ResultsArgs) => {
+
     if (hidden) return null;
     else return(
     <React.Fragment>
@@ -42,50 +49,50 @@ const Results = ({currentTask,
                             <div className="titleContainer">
                                 <p className="titleOut">Follow the {currentV} plan:</p>
                                 <p className="smallP">Start your plan tommorow. But don't worry! you can always go back to the 
-                                beggining if you don't feel like advancing in your new habit yet.</p>
+                                beginning if you don't feel like advancing in your new habit yet.</p>
                             </div> 
                         <div className="rowContainer">  
                                 <div className="weekContainer">
                                     <p className='titleW'>{D0}</p>
                                     <div className="rowContainer">
-                                        <p className="smallP">{currentTask}&nbsp;</p><p className="number">{currentN}</p>
+                                        <p className="smallP">{currentTask}&nbsp;</p><p className="number">{current0}</p>
                                     </div>
                                 </div>  
                                 <div className="weekContainer">
                                     <p className='titleW'>{D1}</p>
                                     <div className="rowContainer">
-                                        <p className="smallP">{currentTask}&nbsp;</p><p className="number">{currentN * 2}</p>
+                                        <p className="smallP">{currentTask}&nbsp;</p><p className="number">{current1}</p>
                                     </div>
                                 </div>
                                 <div className="weekContainer">
                                     <p className='titleW'>{D2}</p>
                                     <div className="rowContainer">
-                                        <p className="smallP">{currentTask}&nbsp;</p><p className="number">{currentN * 3}</p>
+                                        <p className="smallP">{currentTask}&nbsp;</p><p className="number">{current2}</p>
                                     </div>
                                 </div>
                                 <div className="weekContainer">
                                     <p className='titleW'>{D3}</p>
                                     <div className="rowContainer">
-                                        <p className="smallP">{currentTask}&nbsp;</p><p className="number">{currentN * 4}</p>
+                                        <p className="smallP">{currentTask}&nbsp;</p><p className="number">{current3}</p>
                                     </div>
                                 </div>
                                 <div className="weekContainer">
                                     <p className='titleW'>{D4}</p>
                                     <div className="rowContainer">
-                                        <p className="smallP">{currentTask}&nbsp;</p><p className="number">{currentN * 5}</p>
+                                        <p className="smallP">{currentTask}&nbsp;</p><p className="number">{current4}</p>
                                     </div>
                                 </div>
                                 
                                 <div className="weekContainer">
                                     <p className='titleW'>{D5}</p>
                                     <div className="rowContainer">
-                                        <p className="smallP">{currentTask}&nbsp;</p><p className="number">{currentN * 6}</p>
+                                        <p className="smallP">{currentTask}&nbsp;</p><p className="number">{current5}</p>
                                     </div>
                                 </div>
                                 <div className="weekContainer">
                                     <p className='titleW'>{D6}</p>
                                     <div className="rowContainer">
-                                        <p className="smallP">{currentTask}&nbsp;</p><p className="number">{currentN * 7}</p>
+                                        <p className="smallP">{currentTask}&nbsp;</p><p className="number">{current6}</p>
                                     </div>
                                 </div>
                         </div> 
@@ -102,7 +109,7 @@ const Results = ({currentTask,
                     <p className="titleOut">The earlier you start the better</p>
                     <p className="smallP">If you start following this plan for at least
                     one month, at the end of it you will {currentV}:</p>
-                    <p className="motiv">{Math.ceil(currentMeasure === "hours" ? currentN * 217 / 60 : currentN * 217)} {currentMeasure}</p>
+                    <p className="motiv">{Math.ceil(currentMeasure === "hours" ? current6 * 31 / 60 : current6 * 31)} {currentMeasure}</p>
 
                     <img className="Img space" src={currentSource}
                     alt="Chosen habit"></img>
